@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    
+    }
+    ul{
+      list-style: none;
+    }
+    
+    
+    
+    .find{
+    }
+    
+    .find-smallimg{
+      position: relative;
+      top: 161px;
+      right: 448.5px;
+      left: 152px;
+    bottom: 683px;
+    width: 37px;
+    height: 46px;
+    flex-shrink: 0;
+    }
+    
+    .find-tittle{
+      position: relative;
+    top: 80px;
+    bottom: 650px;
+    right: -20px;
+    left: 362.5;
+    color: #F8F7F7;
+    font-family: "Roboto Condensed";
+    font-size: 48px;
+    line-height: 125%; /* 60px */
+    text-transform: uppercase;
+    height: 120px;
+    width: 255px;
+    padding: ;
+    }
+    .find-subtittle{
+    position: relative;
+    right: -20px;
+    left: 365.5;
+    top: 120px;
+    bottom: 626px;
+    color: #F8F7F7;
+    text-align: center;
+    font-family: "Roboto Condensed";
+    font-size: 24px;
+    line-height: 100%; /* 24px */
+    width: 222px;
+    height: 24px;
+    
+    }
+    .find-list{
+    }
+    .find-list-item{
+    }
+    .find-list-item-buttonFind{
+    }
+    .find-list-item-buttonSumbit{
+    }
+     
+    .find-image{
+      width: 390px;
+      height: 850px;
+     
+      background: url(img/background.webp) lightgray 50% / cover no-repeat;
+     
+      
+    }
+    
+    
+    
