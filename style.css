@@ -1,4 +1,3 @@
-
 /* 1 */
 
 .menu {
@@ -648,20 +647,55 @@ body {
   z-index: 10;
 }
 
-@media screen and (max-width: 992px) {
-  .tour-item {
-    width: 48%;
+@media screen and (min-width: 834px) {
+  .container{
+    padding: 0;
   }
-}
-@media screen and (max-width: 768px) {
-  .tour-item {
-    width: 100%;
+  .tour-item{
+  }
+  .thefamous-tour{
+    display: flex;
+    column-gap: 10px;
+    row-gap: 50px;
+    flex-wrap: wrap;
+  }
+  .tour-item:nth-child(3) {
+    display: none;
+    opacity: 0;
   }
   .thelast-tittle {
     text-align: center;
   }
 }
-
+@media screen and (min-width: 1440px) {
+  .thefamous-tour{
+    width: 1280px;
+    row-gap: 50px;
+    column-gap: 20px;
+  }
+  .tour{
+    flex-wrap: nowrap;
+    width: 1280px;
+    gap: 20px;
+  }
+  .star{
+    height: 19px;
+    width: 19px;
+  }
+  .tour-item{
+    display: block;
+    opacity: 1;
+    width: 413px;
+  }
+  .tour-item:nth-child(3) {
+    display: block;
+    opacity: 1;
+  }
+  .tour-item img {
+    width: 413px;
+    height: 300px;
+  }
+}
 .play-regular {
   font-family: "Play", sans-serif;
   font-weight: 400;
