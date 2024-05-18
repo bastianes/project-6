@@ -1,1040 +1,355 @@
-/* 1 */
-
-.menu {
-  background: var(--Web_service_color-header_color, #cfe7f5);
-  display: flex;
-  padding: 12px 20px;
-  align-items: center;
-  gap: 40px;
-  font-family: "Play", sans-serif;
-}
-
-.menu-img-vector {
-  width: 40px;
-  height: 30px;
-  fill: var(--Web_service_color-Hero_blue, #266294);
-}
-
-.menu-img-award {
-  width: 40px;
-  height: 40px;
-  flex-shrink: 0;
-  fill: var(--Web_service_color-Hero_blue, #266294);
-}
-
-.menu-img-map-pin {
-  margin-top: -47px;
-  margin-left: 11px;
-  width: 8px;
-  height: 8px;
-  flex-shrink: 0;
-}
-
-.menu-text {
-  width: 73px;
-  height: 13px;
-  color: var(--Web_service_color-Hero_blue, #266294);
-  text-align: center;
-  font-family: Play;
-  font-size: 10px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 1.5;
-  padding-top: 20px;
-}
-
-.menu-logo {
-  margin-bottom: -10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 4px;
-}
-
-.menu-link {
-  display: flex;
-  padding: 12px 16px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  border: 2px solid var(--Web_service_color-Hero_blue, #266294);
-  color: var(--Web_service_color-Hero_blue, #266294);
-  text-align: center;
-  font-family: Play;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 1.4;
-}
-
-@media screen and (min-width: 834px) {
-  .menu {
-    display: inline-flex;
-    padding: 12px 32px;
-    align-items: center;
-    gap: 38px;
-  }
-
-  .menu-img-vector {
-    display: none;
-  }
-
-  .menu-text {
-    color: var(--Web_service_color-Hero_blue, #266294);
-    text-align: center;
-    font-family: Play;
-    font-size: 8px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 2.8px;
-  }
-
-  .menu-logo-text {
-    color: var(--Web_service_color-Hero_blue, #266294);
-    text-align: center;
-    font-family: Play;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 1.5px;
-    position: relative;
-    bottom: -25px;
-  }
-
-  .menu-logo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 4px;
-    position: relative;
-    bottom: 10px;
-  }
-
-  .menu-navigation {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-  }
-
-  .menu-img-heart {
-    width: 24px;
-    height: 24px;
-    position: relative;
-    right: -15px;
-  }
-
-  .menu-img-user {
-    width: 24px;
-    height: 24px;
-    position: relative;
-    right: -10px;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .menu {
-    display: inline-flex;
-    padding: 12px 80px;
-    align-items: center;
-    gap: 155px;
-  }
-
-  .menu-navigation {
-    display: flex;
-    align-items: center;
-    gap: 60px;
-  }
-
-  .menu-text {
-    color: var(--Web_service_color-Hero_blue, #266294);
-    text-align: center;
-    font-family: Play;
-    font-size: 8px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 2.6px;
-    position: relative;
-    left: -20px;
-  }
-
-  .menu-img-heart {
-    width: 24px;
-    height: 24px;
-  }
-
-  .menu-img-user {
-    width: 24px;
-    height: 24px;
-  }
-
-  .menu-img-map-pin {
-    width: 12px;
-    height: 12px;
-    flex-shrink: 0;
-    position: relative;
-    top: -15px;
-  }
-
-  .menu-img-award {
-    width: 55px;
-    height: 54.505px;
-    flex-shrink: 0;
-  }
-
-  .menu-logo-text {
-    color: var(--Web_service_color-Hero_blue, #266294);
-    text-align: center;
-    font-family: Play;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 1.8px;
-    position: relative;
-    top: 20px;
-  }
-
-  .menu-logo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5px;
-  }
-
-  .menu-link {
-    display: flex;
-    padding: 12px 28px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    color: var(--Web_service_color-Hero_blue, #266294);
-    text-align: center;
-    font-family: Play;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 2px;
-  }
-}
-
-/* 2 */
-
-.find {
-}
-
-.find-image {
-  width: 390px;
-  height: 850px;
-  background: url(imgfind/background.webp) lightgray 50% / cover no-repeat;
-}
-
-.find-smallimg {
-  position: relative;
-  top: 161px;
-  left: 152px;
-  bottom: 683px;
-  width: 37px;
-  height: 46px;
-}
-
-.find-tittle {
-  position: relative;
-  top: 80px;
-  bottom: 650px;
-  left: 20px;
-  color: #f8f7f7;
-  font-family: "Roboto Condensed";
-  height: 120px;
-  width: 255px;
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 60px;
-  text-align: left;
-}
-
-.find-subtittle {
-  position: relative;
-  left: 20px;
-  top: 80px;
-  bottom: 626px;
-  color: #f8f7f7;
-  text-align: center;
-  font-family: "Roboto Condensed";
-  font-size: 24px;
-  line-height: 100%;
-  /* 24px */
-  width: 222px;
-  height: 24px;
-}
-
-.find-list {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 24px;
-}
-
-.find-list-item-buttonFind {
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
-  border: 1px solid #e96e25;
-  background: #e96e25;
-  color: #f8f7f7;
-  text-align: center;
-  font-family: "Roboto Condensed";
-  font-size: 16px;
-  font-style: normal;
-  line-height: 1px;
-  /* 16px */
-  position: relative;
-  left: 20px;
-  right: 382.5px;
-  top: 218px;
-  margin-bottom: 24px;
-  font-weight: 700;
-  padding: 16px 32px 16px 32px;
-  height: 16px;
-}
-
-.find-list-item-buttonSumbit {
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
-  border: 2px solid #e96e25;
-  color: #e96e25;
-  text-align: center;
-  font-family: "Roboto Condensed";
-  font-optical-sizing: auto;
-  font-size: 16px;
-  background: none;
-  position: relative;
-  left: 20px;
-  right: 382.5px;
-  top: 190px;
-  padding: 16px 32px 16px 32px;
-  gap: 10px;
-  line-height: 1px;
-  height: 16px;
-  font-weight: 700;
-  margin: 0;
-}
-
-.find-smallimg {
-  position: relative;
-  z-index: 1;
-}
-
-@media screen and (min-width: 834px) {
-  .find-image {
-    background: url(./imgfind/backgroundTablet.webp) lightgray 50% / cover
-      no-repeat;
-    min-width: 834px;
-    min-height: 1112px;
-  }
-
-  .find-tittle {
-    font-size: 96px;
-    width: 509px;
-    height: 240px;
-    top: 100px;
-    left: 32px;
-    margin-bottom: 24px;
-    line-height: 120px;
-  }
-
-  .find-subtittle {
-    color: #f8f7f7;
-    text-align: center;
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 32px;
-    left: 32px;
-    width: 296px;
-    height: 32px;
-  }
-
-  .find-smallimg {
-    width: 74px;
-    height: 90px;
-    top: 266px;
-    left: 302px;
-  }
-
-  .find-list-item-buttonFind {
-    font-size: 16px;
-    line-height: 16px;
-    text-align: center;
-    justify-content: center;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    position: relative;
-    left: 32px;
-    top: 236px;
-    width: 235px;
-    height: 48px;
-    padding: 16px 32px 16px 32px;
-    gap: 0px;
-  }
-
-  .find-list-item-buttonSumbit {
-    position: relative;
-    margin-left: 50px;
-    font-size: 16px;
-    line-height: 16px;
-    text-align: center;
-    justify-content: center;
-    left: 267px;
-    top: 142px;
-    width: 235px;
-    height: 48px;
-    padding: 16px 32px 16px 32px;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .find-image {
-    background: url(./imgfind/backgrounddestop.webp) lightgray 50% / no-repeat;
-    height: 850px;
-    width: 1440px;
-  }
-
-  .find-tittle {
-    color: #f8f7f7;
-    font-family: "Roboto Condensed";
-    font-size: 96px;
-    font-style: normal;
-    position: relative;
-    width: 509px;
-    height: 240px;
-    top: 160px;
-    left: 100px;
-    line-height: 120px;
-    text-align: left;
-  }
-
-  .find-smallimg {
-    position: relative;
-    width: 83px;
-    height: 102px;
-    top: 340px;
-    left: 364px;
-  }
-
-  .find-subtittle {
-    position: relative;
-    width: 296px;
-    height: 32px;
-    top: 136px;
-    left: 100px;
-  }
-
-  .find-list-item-buttonSumbit {
-    position: relative;
-    left: 330px;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 16px;
-    text-align: center;
-    color: #e96e25;
-    justify-content: center;
-    width: 235px;
-    height: 48px;
-    padding: 16px 32px 16px 32px;
-    gap: 10px;
-    border: 2px 0px 0px 0px;
-    margin-left: 40px;
-  }
-
-  .find-list-item-buttonFind {
-    position: relative;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 16px;
-    text-align: center;
-    left: 100px;
-  }
-}
-
-/* 3 */
-
-.criteria {
-  padding-bottom: 72px;
-}
-.container {
-  max-width: 375px;
-  margin: 0 auto;
-}
-.criteria-title {
-  margin-bottom: 26px;
-  color: #111;
-  text-align: center;
-  font-size: 32px;
-  font-weight: 700;
-}
-.criteria-list {
-  display: flex;
-  flex-direction: column;
-  column-gap: 24px;
-}
-.criteria-list-item-img {
-  margin-bottom: 24px;
-  width: 375px;
-  height: 280px;
-}
-.criteria-list-item-text {
-  color: #111;
-  text-align: center;
-  font-size: 32px;
-}
-@media screen and (min-width: 834px) {
-  .criteria {
-    padding-bottom: 80px;
-  }
-  .container {
-    min-width: 770px;
-  }
-  .criteria-title {
-    text-align: start;
-  }
-  .criteria-list {
-    width: 774px;
-    flex-direction: row;
-    flex-wrap: wrap;
-    column-gap: 20px;
-    row-gap: 24px;
-  }
-  .criteria-list-item {
-    border: 1px solid transparent;
-  }
-  .criteria-list-item-text {
-    text-align: center;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .criteria {
-    padding-bottom: 104px;
-  }
-  .container {
-    max-width: 1280px;
-  }
-  .criteria-title {
-    font-size: 40px;
-  }
-  .criteria-list {
-    width: 1284px;
-    row-gap: 36px;
-  }
-  .criteria-list-item-img {
-    width: 630px;
-    height: 504px;
-  }
-  .criteria-list-item-text {
-    text-align: center;
-    font-weight: 700;
-  }
-}
-
-/* 4 */
-
-body {
-  font-family: "Play", sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #ebf8ff;
-}
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-.tour,
-.tour-slide {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.tour-item {
-  width: 31%;
-  margin-bottom: 20px;
-  box-sizing: border-box;
-}
-.tour-item img {
-  width: 100%;
-  height: auto;
-}
-
-.thelast-tittle {
-  color: var(#111);
-  text-align: left;
-  font-family: "Play", sans-serif;
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 100%;
-  margin-bottom: 10px;
-}
-.thelast-link {
-  color: var(#266294);
-  text-align: center;
-  font-family: "Play", sans-serif;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 100%;
-  float: right;
-}
-
-.thelast-list-itemt-text {
-  color: var(#111);
-  font-family: "Play";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 100%;
-}
-
-.thelast-list-item-textcountry {
-  color: var(#766f6f);
-  font-family: "Play", sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 100%;
-}
-
-.section-list-item-img {
-  width: 416px;
-  height: 300px;
-}
-.section-list-item-icon {
-  width: 14px !important;
-  height: 14px;
-  stroke-width: 1px;
-  stroke: var(#266294);
-}
-.thelast-list-item-link {
-  color: var(#266294);
-  font-family: Play;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 100%;
-}
-.thelast-list-text,
-.thelast-list-item-text {
-  color: var(#111);
-  font-family: "Play", sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 100%;
-}
-
-.thelast-list-item {
-  color: var(#111);
-  text-align: center;
-  font-family: "Play", sans-serif;
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 100%;
-  list-style-type: none;
-}
-
-.tour-slide {
-  position: relative;
-  left: -90px;
-  z-index: 10;
-}
-
-@media screen and (min-width: 834px) {
-  .container{
-    padding: 0;
-  }
-  .tour-item{
-  }
-  .thefamous-tour{
-    display: flex;
-    column-gap: 10px;
-    row-gap: 50px;
-    flex-wrap: wrap;
-  }
-  .tour-item:nth-child(3) {
-    display: none;
-    opacity: 0;
-  }
-  .thelast-tittle {
-    text-align: center;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .thefamous-tour{
-    width: 1280px;
-    row-gap: 50px;
-    column-gap: 20px;
-  }
-  .tour{
-    flex-wrap: nowrap;
-    width: 1280px;
-    gap: 20px;
-  }
-  .star{
-    height: 19px;
-    width: 19px;
-  }
-  .tour-item{
-    display: block;
-    opacity: 1;
-    width: 413px;
-  }
-  .tour-item:nth-child(3) {
-    display: block;
-    opacity: 1;
-  }
-  .tour-item img {
-    width: 413px;
-    height: 300px;
-  }
-}
-.play-regular {
-  font-family: "Play", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.play-bold {
-  font-family: "Play", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.view-toggle {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.arrow {
-  position: absolute;
-  transform: translateY(-50%);
-  border: none;
-  padding: 1px;
-  cursor: pointer;
-  z-index: 1;
-  background-color: #ffffff00;
-}
-
-.arrow-left {
-  top: 30%;
-  margin-left: -45px;
-}
-
-.arrow-right {
-  top: 30%;
-  right: 405px;
-}
-
-.arrow-left-two {
-  top: 75%;
-  margin-left: -45px;
-}
-.arrow-right-two {
-  top: 75%;
-  right: 405px;
-}
-
-.arrow-left-three {
-  top: 115%;
-  margin-left: -45px;
-}
-.arrow-right-three {
-  top: 115%;
-  right: 405px;
-}
-@media screen and (max-width: 992px) {
-  .container {
-    max-width: 800px;
-  }
-  .tour-item {
-    width: 48%;
-  }
-  .tour {
-    clear: both !important;
-  }
-  .arrow-left {
-    margin-left: -45px;
-  }
-
-  .arrow-right {
-    right: -15px;
-  }
-  .third-tour {
-    display: none;
-  }
-  .two-section-tour > .arrow-left {
-    top: 60% !important;
-  }
-}
-@media screen and (max-width: 768px) {
-  .container {
-    max-width: 500px;
-  }
-  .tour-item {
-    width: 100%;
-  }
-  .arrow {
-    display: none;
-  }
-}
-
-/* 6 */
-
-.footer {
-  width: 390px;
-  height: 238px;
-  background: var(--Web_service_color-header_color, #cfe7f5);
-  font-family: "Play", sans-serif;
-}
-
-.footer-navigate {
-  display: inline-flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-start;
-  gap: 1px;
-  position: relative;
-  bottom: -20px;
-  left: 15px;
-}
-
-.footer-text {
-  color: var(--Web_service_color-Hero_blue, #266294);
-  font-family: Play;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.8px;
-  width: 200px;
-  height: 1px;
-  position: relative;
-  top: 25px;
-  left: 15px;
-}
-
-.footer-text-navigate {
-  color: var(--Web_service_color-Hero_blue, #266294);
-  font-family: Play;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 1.8px;
-}
-
-.footer-logotype {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 25px;
-  position: relative;
-  right: -255px;
-  top: -155px;
-}
-
-.footer-img-earth {
-  width: 40px;
-  height: 40px;
-  flex-shrink: 0;
-}
-
-.footer-img-map {
-  margin-left: 13px;
-  margin-top: -68px;
-  width: 8px;
-  height: 8px;
-  flex-shrink: 0;
-}
-
-.footer-text-logotype {
-  width: 73px;
-  height: 13px;
-  color: #266294;
-  text-align: center;
-  font-family: Play;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 1.5px;
-}
-
-.footer-img-social {
-  width: 20px;
-  height: 20px;
-  width: 20px;
-  height: 20px;
-}
-
-.footer-social {
-  display: inline-flex;
-  align-items: flex-end;
-  gap: 11px;
-  position: relative;
-  left: 150px;
-  top: -63px;
-}
-
-@media screen and (min-width: 834px) {
-  .footer {
-    width: 834px;
-    height: 171px;
-    flex-shrink: 0;
-    background: #cfe7f5;
-  }
-
-  .footer-text-navigate {
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 1.6px;
-  }
-
-  .footer-navigate {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    position: relative;
-    left: -30px;
-  }
-
-  .footer-social {
-    display: inline-flex;
-    align-items: flex-end;
-    gap: 11px;
-    position: relative;
-    top: -15px;
-    left: 615px;
-  }
-
-  .footer-img-social {
-    width: 20px;
-    height: 20px;
-  }
-
-  .footer-text {
-    color: var(--Web_service_color-Hero_blue, #266294);
-    font-family: Play;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 2.8;
-    position: relative;
-    top: 62px;
-  }
-
-  .footer-logotype {
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
-    position: initial;
-    position: relative;
-    top: -40px;
-    left: 30px;
-  }
-
-  .footer-text-logotype {
-    color: var(--Web_service_color-Hero_blue, #266294);
-    text-align: center;
-    font-family: Play;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 1.5px;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .footer {
-    width: 1440px;
-    height: 212px;
-    flex-shrink: 0;
-  }
-
-  .footer-navigate {
-    display: inline-flex;
-    align-items: flex-end;
-    gap: 64px;
-  }
-
-  .footer-text-navigate {
-    text-align: center;
-    font-family: Play;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 2.6px;
-    position: relative;
-    right: -700px;
-  }
-
-  .footer-social {
-    display: flex;
-    width: 192px;
-    align-items: center;
-    gap: 28px;
-  }
-
-  .footer-img-social {
-    width: 24px;
-    height: 24px;
-    flex-shrink: 0;
-    position: relative;
-    right: -550px;
-    top: -40px;
-  }
-
-  .footer-logotype {
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    position: relative;
-    left: 50px;
-  }
-
-  .footer-text-logotype {
-    color: var(--Web_service_color-Hero_blue, #266294);
-    text-align: center;
-    font-family: Play;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 1.8px;
-    position: relative;
-    bottom: -35px;
-  }
-
-  .footer-img-map {
-    width: 14px;
-    height: 14px;
-    flex-shrink: 0;
-    position: relative;
-    top: -8px;
-    right: -2px;
-  }
-
-  .footer-img-earth {
-    width: 60px;
-    height: 60px;
-    flex-shrink: 0;
-  }
-
-  .footer-text {
-    color: var(--Web_service_color-Hero_blue, #266294);
-    font-family: Play;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 2.8px;
-    position: relative;
-    top: 118px;
-    left: 50px;
-  }
-}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <section class="menu">
+      <div class="menu-logo">
+        <img class="menu-img-award" src="./imgmenu/earthpin.svg" alt="award" />
+        <img
+          class="menu-img-map-pin"
+          src="./imgmenu/mappin.svg"
+          alt="map-pin"
+        />
+        <p class="menu-logo-text">See World</p>
+      </div>
+      <div class="menu-navigation">
+        <p class="menu-text">Головна</p>
+        <p class="menu-text">Всі оголошення</p>
+        <img
+          class="menu-img-heart"
+          src="./imgmenu/mdicardsheartoutline(1).svg"
+          alt="heart"
+        />
+        <img class="menu-img-user" src="./imgmenu/user.svg" alt="user" />
+        <p class="menu-text">Особистий кабінет</p>
+      </div>
+      <img class="menu-img-vector" src="./imgmenu/burger.svg" alt="vector" />
+      <a class="menu-link" href="">Зареєструватись</a>
+    </section>
+    <section class="find">
+      <div class="container">
+        <div class="find-image">
+          <img class="find-smallimg" src="./imgfind/smallballon.webp" alt="" />
+          <h1 class="find-tittle">Знайди своє місце</h1>
+
+          <h2 class="find-subtittle">Подорожуй зі смаком</h2>
+          <ul class="find-list">
+            <li class="find-list-item">
+              <button class="find-list-item-buttonFind">
+                Знайти оголошення
+              </button>
+            </li>
+            <li class="find-list-item">
+              <button class="find-list-item-buttonSumbit">
+                Подати оголошення
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="criteria">
+      <div class="container">
+        <h3 class="criteria-title">Критерії оголошення</h3>
+        <ul class="criteria-list">
+          <li class="criteria-list-item">
+            <img
+              class="criteria-list-item-img"
+              src="./imagecreteria/hoeses.webp"
+              alt="houses"
+            />
+            <p class="criteria-list-item-text">Будинки</p>
+          </li>
+          <li class="criteria-list-item">
+            <img
+              class="criteria-list-item-img"
+              src="./imagecreteria/studios.webp"
+              alt="studio"
+            />
+            <p class="criteria-list-item-text">Студії</p>
+          </li>
+          <li class="criteria-list-item">
+            <img
+              class="criteria-list-item-img"
+              src="./imagecreteria/apartament.webp"
+              alt="apartments"
+            />
+            <p class="criteria-list-item-text">Квартири</p>
+          </li>
+          <li class="criteria-list-item">
+            <img
+              class="criteria-list-item-img"
+              src="./imagecreteria/rooms.webp"
+              alt="rooms"
+            />
+            <p class="criteria-list-item-text">Кімнати</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="thefamous">
+      <div class="container">
+        <h1 class="thelast-tittle">Найпопулярніші країни для подорожей</h1>
+        <div class="view-toggle">
+          <h2 class="thelast-tittle">Франція</h2>
+          <div>
+            <a class="thelast-link" href="">Відкрити всі оголошення</a>
+          </div>
+          <h2 class="thelast-tittle">Італія</h2>
+          <div class="tour">
+            <div class="tour-item">
+              <img src="./image/1(4).webp" alt="" />
+              <p class="thelast-list-itemt-text">Nantes 10 753 готелів</p>
+            </div>
+            <div class="tour-item">
+              <img src="./image/2(4).webp" alt="" />
+              <p class="thelast-list-itemt-text">Montpellier 11 386 готелів</p>
+            </div>
+            <div class="tour-item">
+              <img src="./image/3(4).webp" alt="" />
+              <p class="thelast-list-itemt-text">Paris 12 278 готелів</p>
+            </div>
+            <div>
+              <a class="thelast-link" href="">Відкрити всі оголошення</a
+              ><br /><br />
+            </div>
+          </div>
+          <div class="tour">
+            <div class="tour-item">
+              <img src="./image/4(4).webp" alt="" />
+              <p class="thelast-list-itemt-text">Venezia 14 120 готелів</p>
+            </div>
+            <div class="tour-item">
+              <img src="./image/5(4).webp" alt="" />
+              <p class="thelast-list-itemt-text">Firenze 7 988 готелів</p>
+            </div>
+            <div class="tour-item">
+              <img src="./image/6(4).webp" alt="" />
+              <p class="thelast-list-itemt-text">Roma 12 809 готелів</p>
+            </div>
+          </div>
+          <h2 class="thelast-tittle">Іспанія</h2>
+          <div>
+            <a class="thelast-link" href="">Відкрити всі оголошення</a>
+          </div>
+
+          <div class="tour">
+            <div class="tour-item">
+              <img src="./image/7(4).webp" alt="" />
+              <p class="thelast-list-itemt-text">Selvia 8 984готелів</p>
+            </div>
+            <div class="tour-item">
+              <img src="./image/8(4).webp" alt="" />
+              <p class="thelast-list-itemt-text">Madrit 15 325 готелів</p>
+            </div>
+            <div class="tour-item">
+              <img src="./image/9(4).webp" alt="" />
+              <p class="thelast-list-itemt-text">Mallorca 9 825 готелів</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="thelast">
+      <div class="container">
+        <h1 class="thefamous-tittle">Останні оголошення</h1>
+        <div>
+          <a class="thefamous-link" href="">Відкрити всі оголошення</a>
+        </div>
+        <div class="thefamous-tour">
+          <div class="tour-item">
+            <img src="./image1/1(5).webp" alt="Тур 1" />
+            <p class="t-list-itemt-text">Vila Gale Lagos Hote</p>
+            <p class="thefamous-list-item-textcountry">Andresen, Portugal</p>
+            <div class="star">
+              <img
+                class="section-list-item-icon"
+                src="./image1/star.svg"
+                alt=""
+              />
+              <a class="thefamous-list-item-link" href="">7,1</a>
+            </div>
+          </div>
+          <div class="tour-item">
+            <img src="./image1/2(5).webp" alt="Тур 2" />
+            <p class="thefamous-list-itemt-text">Cala Moresca</p>
+            <p class="thefamous-list-item-textcountry">Via Faro, Italy</p>
+            <div class="star">
+              <img
+                class="section-list-item-icon"
+                src="./image1/star.svg"
+                alt=""
+              />
+              <a class="thefamous-list-item-link" href="">8,6</a>
+            </div>
+          </div>
+          <div class="tour-item">
+            <img src="./image1/3(5).webp" alt="Тур 3" />
+            <p class="thefamous-list-itemt-text">Le Galion Hotel</p>
+            <p class="thefamous-list-item-textcountry">
+              Saint-Martin-de-Re, France
+            </p>
+            <div class="star">
+              <img
+                class="section-list-item-icon"
+                src="./image1/star.svg"
+                alt=""
+              />
+              <a class="thefamous-list-item-link" href="">8,4</a>
+            </div>
+          </div>
+          <div class="tour-item">
+            <img src="./image1/4(5).webp" alt="Тур 4" />
+            <p class="thefamous-list-itemt-text">Molitor Hotel</p>
+            <p class="thefamous-list-item-textcountry">Paris, France</p>
+            <div class="star">
+              <img
+                class="section-list-item-icon"
+                src="./image1/star.svg"
+                alt=""
+              />
+              <a class="thefamous-list-item-link" href="">6,9</a>
+            </div>
+          </div>
+
+          <div class="tour-item">
+            <img src="./image1/5(5).webp" alt="Тур 5" />
+            <p class="thelast-list-itemt-text">Petit Hotel</p>
+            <p class="thelast-list-item-textcountry">Madrid, Spain</p>
+            <div class="star">
+              <img
+                class="section-list-item-icon"
+                src="./image1/star.svg"
+                alt=""
+              />
+              <a class="thefamous-list-item-link" href="">7,2</a>
+            </div>
+          </div>
+
+          <div class="tour-item">
+            <img src="./image1/6(5).webp" alt="Тур 6" />
+            <p class="thefamous-list-itemt-text">Gran Hotel</p>
+            <p class="thefamous-list-item-textcountry">Alicante, Spain</p>
+            <div class="star">
+              <img
+                class="section-list-item-icon"
+                src="./image1/star.svg"
+                alt=""
+              />
+              <a class="thefamous-list-item-link" href="">8,9</a>
+            </div>
+          </div>
+
+          <div class="tour-item">
+            <img src="./image1/7(5).webp" alt="Тур 7" />
+            <p class="thefamous-list-itemt-text">Gran Hotel</p>
+            <p class="thefamous-list-item-textcountry">Alicante, Spain</p>
+            <div class="star">
+              <img
+                class="section-list-item-icon"
+                src="./image1/star.svg"
+                alt=""
+              />
+              <a class="thefamous-list-item-link" href="">8,9</a>
+            </div>
+          </div>
+
+          <div class="tour-item">
+            <img src="./image1/8(5).webp" alt="Тур 8" />
+            <p class="tthefamous-list-itemt-text">Gran Hotel</p>
+            <p class="thefamous-list-item-textcountry">Alicante, Spain</p>
+            <div class="star">
+              <img
+                class="section-list-item-icon"
+                src="./image1/star.svg"
+                alt=""
+              />
+              <a class="thefamous-list-item-link" href="">8,9</a>
+            </div>
+          </div>
+
+          <div class="tour-item">
+            <img src="./image1/9(5).webp" alt="Тур 9" />
+            <p class="thefamous-list-itemt-text">Gran Hotel</p>
+            <p class="thefamous-list-item-textcountry">Alicante, Spain</p>
+            <div class="tour-item">
+              <img
+                class="section-list-item-icon"
+                src="./image1/star.svg"
+                alt=""
+              />
+              <a class="thefamous-list-item-link" href="">8,9</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="footer">
+      <div class="footer-navigate">
+        <p class="footer-text-navigate">Головна</p>
+        <p class="footer-text-navigate">Всі оголошення</p>
+        <p class="footer-text-navigate">Обране</p>
+        <p class="footer-text-navigate">Особистий кабінет</p>
+      </div>
+      <p class="footer-text">©Всі права захищені.</p>
+      <div class="footer-logotype">
+        <img class="footer-img-earth" src="./imgmenu/earthpin.svg" alt="" />
+        <img class="footer-img-map" src="./imgmenu/mappin.svg" alt="" />
+        <p class="footer-text-logotype">See world</p>
+      </div>
+      <div class="footer-social">
+        <img class="footer-img-social" src="./imgmenu/facebook .svg" alt="" />
+        <img class="footer-img-social" src="./imgmenu/instagram.svg" alt="" />
+        <img class="footer-img-social" src="./imgmenu/twitter.svg" alt="" />
+        <img class="footer-img-social" src="./imgmenu/youtube.svg" alt="" />
+      </div>
+    </section>
+    <script src="./index.js"></script>
+  </body>
+</html>
